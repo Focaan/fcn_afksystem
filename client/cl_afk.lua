@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
 
 			if currentPos == prevPos then
 				if time > 0 then
-					if fcn.kickWarning and time == math.ceil(fcn.secondsUntilKick / 4) then
+					if fcn.kickWarning == true and time == math.ceil(fcn.secondsUntilKick / 4) then
 						lib.notify({
 							title = '',
 							description = 'After ' .. time .. ' seconds you will be kicked for AFK!',
