@@ -19,6 +19,7 @@ Citizen.CreateThread(function()
 							description = 'After ' .. time .. ' seconds you will be kicked for AFK!',
 							type = 'inform'
 						})
+						else
 					end
 
 					time = time - 1
